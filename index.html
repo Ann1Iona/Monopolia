@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+
+		.boxs {
+			height: 100px;
+			width: 100px;
+			background-image: url(s1200.webp);
+			background-size: 100% 100%;
+			border: solid;
+			position: absolute;
+			color: white;
+		}
+		.firsBox {
+			background-image: url(PicsArt_03-28-04.30.57.png);
+			background-size: 100% 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="content" style="background-image: url(bg.png); background-size: 100% 100%; height: 800px;" class="col-12">
+		<h4 style="margin-left: 20px; color: white;">Score: <span class="score">150</span></h4>
+		
+		<img src="s1200.png" class="bt" style="width: 100px; margin-left: 20px; margin-bottom: 20px;">
+		<audio style="width: 250px; height: 40px; margin-top: 20px; margin-left: 10px;" controls ="controls">
+			<source src="Клинок.mp3">
+		</audio>		
+		<div class="boxs firsBox" style="margin-left: 20px">
+			
+		</div>
+		<div class="boxs" style="margin-left: 130px">1</div>
+		<div class="boxs" style="margin-left: 240px">2</div>
+		<div class="boxs" style="margin-left: 350px; background-image: url(sun.jpg); background-size: 100% 100%;">3</div>
+				
+		<div class="boxs" style="margin-left: 460px">4</div> 
+		<div class="boxs" style="margin-left: 570px">5</div>
+		<div class="boxs" style="margin-left: 680px; background-image: url(sun.jpg); background-size: 100% 100%;">6</div>
+		<div class="boxs" style="margin-left: 790px">7</div>
+
+		<div class="boxs" style="margin-left: 900px">8</div>
+		<div class="boxs" style="margin-left: 1010px; background-image: url(sun.jpg); background-size: 100% 100%;" >9</div>
+		<div class="boxs" style="margin-left: 1120px">10</div>
+		<div class="boxs" style="margin-left: 1230px">11</div>
+
+		<div class="boxs" style="margin-left: 1340px; background-image: url(52.jpg); background-size: 100% 100%;">12 
+		</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 110px">13</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 220px">14</div>	
+		<div class="boxs" style="margin-left: 1340px; margin-top: 330px">15</div>		
+
+		<div class="boxs" style="margin-left: 1340px; margin-top: 440px">16</div>
+		<div class="boxs" style="margin-left: 1230px; margin-top: 440px">17</div>
+		<div class="boxs" style="margin-left: 1120px; margin-top: 440px">18</div>
+		<div class="boxs" style="margin-left: 1010px; margin-top: 440px; background-image: url(52.jpg); background-size: 100% 100%;">19</div>
+
+		<div class="boxs" style="margin-left: 900px; margin-top: 440px">20</div>
+		<div class="boxs" style="margin-left: 790px; margin-top: 440px">21</div>
+		<div class="boxs" style="margin-left: 680px; margin-top: 440px; background-image: url(52.jpg); background-size: 100% 100%;">22</div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 440px">23</div>
+
+		<div class="boxs" style="margin-left: 460px; margin-top: 440px">24</div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 440px; background-image: url(52.jpg); background-size: 100% 100%;">25</div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 440px">26</div>
+		<div class="boxs" style="margin-left: 130px; margin-top: 440px">27</div>
+
+		<div class="boxs" style="margin-left: 20px; margin-top: 440px; background-image: url(sun.jpg); background-size: 100% 100%;">28</div>
+		<div class="boxs" style="margin-left: 20px; margin-top: 330px">29</div>
+		<div class="boxs" style="margin-left: 20px; margin-top: 220px">30</div>	
+		<div class="boxs" style="margin-left: 20px; margin-top: 110px; background-image: url(d9Gq0o5y6AI.jpg); background-size: 100% 100%;">
+		<h5>finish</h5>
+		</div>		
+
+		<!--последние дивы-->
+		<div class="boxs" style="margin-left: 130px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 460px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 680px; margin-top: 110px; background-color: green; opacity: 0"></div>
+
+	</div>	
+	<script type="text/javascript">
+	let boxs = document.querySelectorAll(".boxs");
+	let score = 150;
+	let go = 0;
+	let costi = document.querySelector(".bt");
+	let player = document.querySelector(".firsBox");
+	let textScore = document.querySelector(".score");
+	let bg = document.querySelector(".content");
+	alert("Помоги малышке Незуко добежать до своего брата, но помни, что Незуко демон и она боиться солнца и глицинию!")
+	alert("Спецально для тебя я оставила опенинг Клинка, что бы игра была более атмосферной, кайфуй 🐈🐈🐈")
+	let creatRand = function() {
+		let numRand = Math.random() * 6;
+		let numRound = Math.round(numRand)
+		return numRound;
+	}
+	costi.onclick = function(){
+		let num = creatRand();
+		go = go + num;
+		score = score + 20;
+		textScore.innerHTML = score;
+		alert("выпало " + num +" иди на клетку " + go)
+		player.style.backgroundImage = "url(s1200.webp)";
+		player.style.backgroundSize = "100% 100%";
+		boxs[go].style.backgroundImage = 'url(PicsArt_03-28-04.30.57.png)';
+		boxs[go].style.backgroundSize = '100% 100%';
+		boxs[go - num].style.backgroundImage = 'url(s1200.webp)';
+		boxs[go - num].style.backgroundSize = '100% 100%';
+		if (go == 3 || go == 6 || go == 9) {
+			alert("Ау, солнце опасно для демонов, спрячимся в тень, сделай один ход назад")
+			boxs[3].style.backgroundImage = 'url(sun.jpg)';
+			boxs[3].style.backgroundSize = '100% 100%';
+			boxs[6].style.backgroundImage = 'url(sun.jpg)';
+			boxs[6].style.backgroundSize = '100% 100%';
+			boxs[9].style.backgroundImage = 'url(sun.jpg)';
+			boxs[9].style.backgroundSize = '100% 100%';
+			go = go - 1;
+			score = score - 40;
+			textScore.innerHTML = score;
+			boxs[go].style.backgroundImage = 'url(PicsArt_03-28-04.30.57.png)';
+			boxs[go].style.backgroundSize = '100% 100%';
+			if(num == 0){
+				boxs[go].style.backgroundImage = 'url(PicsArt_03-28-04.30.57.png)';
+				boxs[go].style.backgroundSize = '100% 100%';
+			}
+		}
+		if (go == 12) {
+			alert("Ау, глициния как яд для Незуко, сделай пять ходов назад")
+			boxs[12].style.backgroundImage = 'url(52.jpg)';
+			boxs[12].style.backgroundSize = '100% 100%';
+			go = go - 5;
+			score = score - 40;
+			textScore.innerHTML = score;
+			boxs[go].style.backgroundImage = 'url(PicsArt_03-28-04.30.57.png)';
+			boxs[go].style.backgroundSize = '100% 100%';
+			if(num == 0){
+				boxs[go].style.backgroundImage = 'url(PicsArt_03-28-04.30.57.png)';
+				boxs[go].style.backgroundSize = '100% 100%';
+			}
+		}
+		if (go == 19|| go == 22||go == 25) {
+			alert("Ау, глициния как яд для Незуко, сделай один ход назад")
+			boxs[19].style.backgroundImage = 'url(52.jpg)';
+			boxs[19].style.backgroundSize = '100% 100%';
+			boxs[22].style.backgroundImage = 'url(52.jpg)';
+			boxs[22].style.backgroundSize = '100% 100%';
+			boxs[25].style.backgroundImage = 'url(52.jpg)';
+			boxs[25].style.backgroundSize = '100% 100%';
+			go = go - 1;
+			score = score - 40;
+			textScore.innerHTML = score;
+			boxs[go].style.backgroundImage = 'url(imgonline-com-ua-Mirror-QwCzhrPyEA6T.jpg)';
+			boxs[go].style.backgroundSize = '100% 100%';
+			if(num == 0){
+				boxs[go].style.backgroundImage = 'url(imgonline-com-ua-Mirror-QwCzhrPyEA6T.jpg)';
+				boxs[go].style.backgroundSize = '100% 100%';
+			}
+		}
+		if (go == 28) {
+			alert("Ау, солнце опасно для демонов, спрячимся в тень, сделай пять ходов назад")
+			boxs[28].style.backgroundImage = 'url(sun.jpg)';
+			boxs[28].style.backgroundSize = '100% 100%';
+			go = go - 5;
+			score = score - 40;
+			textScore.innerHTML = score;
+			boxs[go].style.backgroundImage = 'url(imgonline-com-ua-Mirror-QwCzhrPyEA6T.jpg)';
+			boxs[go].style.backgroundSize = '100% 100%';
+			if(num == 0){
+				boxs[go].style.backgroundImage = 'url(imgonline-com-ua-Mirror-QwCzhrPyEA6T.jpg)';
+				boxs[go].style.backgroundSize = '100% 100%';
+			}
+		}
+		if (go == 13 || go == 14 || go == 15 || go == 12) {
+			boxs[go].style.backgroundImage = 'url(ENRiPdyWsAEGm7D.jpg)';
+			boxs[go].style.backgroundSize = '100% 100%';
+		}
+		if (go == 16 || go == 17 || go == 18 || go == 19 || go == 20 || go == 21 || go == 22 || go == 23 || go == 24 || go == 25 || go == 26 || go == 27 ) {
+			boxs[go].style.backgroundImage = 'url(imgonline-com-ua-Mirror-QwCzhrPyEA6T.jpg)';
+			boxs[go].style.backgroundSize = '100% 100%';
+		}
+		if (go == 28 || go > 28){
+			boxs[31].style.backgroundImage = 'url(GG2H8ruz_IE.jpg)';
+			boxs[31].style.backgroundSize = '100% 100%';
+		}
+		if (go == 31 || go > 31){
+			alert("Молодец, ты помог Незуко найти брата 💛💚💙💜")
+			bg.style.display = "none";
+		}			
+	}
+
+	</script>	
+</body>
+</html>
